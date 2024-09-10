@@ -7,13 +7,16 @@ export default function Index() {
   return (
     <View
       style={{
-        margin:'auto',
+        display: 'flex',
+        backgroundColor: '#e83b31',
+        flexDirection: 'row',
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
       }}
     >
       <View style={styles.container}>
+        
         <Link href="/pag1">
           <View>
             <Image
@@ -52,32 +55,31 @@ export default function Index() {
 }
 
 const styles = StyleSheet.create({
+
 container: {
+  maxWidth: "100%",
   padding: 'auto',
-  backgroundColor: '#e83b31',
-  flex: 1,
+  flexDirection: 'column',
   justifyContent: 'center',
-  flexDirection: 'row',
   alignItems: 'center',
 },
 
 box1: {
   borderWidth: 3,
-  margin: 30,
+  margin: 20,
   width: 250,
   height: 200,
   borderColor:'#202',
 },
 box2: {
   borderWidth: 3,
-  margin: 30,
+  margin: 20,
   width: 250,
   height: 200,
   borderColor:'#202',
 },
 box3: {
   borderWidth: 3,
-  margin: 30,
   width: 250,
   height: 200,
   borderColor:'#202',
